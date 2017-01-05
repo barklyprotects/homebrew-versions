@@ -1,4 +1,4 @@
-Barkly HomeBrew Versions
+Barkly Homebrew Versions
 =======
 
 This is a place for a personal tap of homebrew files.

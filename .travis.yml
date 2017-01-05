@@ -1,7 +1,8 @@
 language: objective-c
 os: osx
-
-# Install Strap and then test installing packages works.
 script:
 - cd Formula && brew install *
 - cd ../Casks && brew cask install *
+notifications:
+  slack:
+    secure: N7lsGLuObE2DAzg9jzWU0ZCP58iXAcMucaYPOPU8jpadBLn2Fh49p8X3tRXYO3kq/13mClSFht4jZWLxhXKSuaxExMcGgeh4/1mi7d3HzfJd9mzC3VM1JmDVJrXSq/DOFJcP7sswx/O8jmArvrA7ywsmBe5HhTm3ShuLL1LFnCYCo577qVBalK87sInnz2thLC54ywLkBRhODkuw64pwJRddD6fbl7T1/sh5iRqfgX593LN4GCNb0tUE+bE4a4BU5vLbGK2lLBKYdb217xJjZ/BCuDAZE8oWqfy28i4k7RP4DLdskEvrsTfkqsK7a3c7XtpSW7IHdmeTTfMGgY3eXks3u7qLW677YS1AFde6NdwLnoeByxuGC0/qPLCnE4vCs3JDwJgrpNtqzsuT+xA51N4r3nONXquUCgJgNz+rqjNX31YEX+mUoTH17ixpNaORaDSypgEhg+gPQqcEt/2tUILO/fK/JGEOV9ADGx/fjguOKO0waVsFvQi0WkirqdUXb4E0b+l3HHQZ0afW8NibJVZ4tiE8/wKNQwi2MGmGMvYYe/5w3hZG+RANGoJPe+3trzBCgo2eQ+wqhOuYAnbc22a6NZ2XCWwuOxykt9FUPZTySESjGYxPGFT8Dk4Ww4bJ4NlO97j/t6sUZHi1xrPVyjccN8za+XaXg8H9/OszI7E=
