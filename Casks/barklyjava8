@@ -1,4 +1,4 @@
-cask 'java8' do
+cask 'barklyjava8' do
   version '1.8.0_151-b12,e758a0de34e24606bca991d704f6dcbf'
   sha256 '2fe720683efbb81f2e137f9d740bd524537a5b4b87ad445faab2c6d139354b5d'
 
