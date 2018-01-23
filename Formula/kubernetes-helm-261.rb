@@ -13,7 +13,7 @@ class KubernetesHelm261 < Formula
     sha256 "f364169da5dee273b9a05fbb77cbd0a9fa508508edcbea224311a69754648e95" => :yosemite
   end
 
-  depends_on :hg => :build
+  depends_on "mercurial" => :build
   depends_on "go" => :build
   depends_on "glide" => :build
 
