@@ -13,7 +13,7 @@ class KubernetesHelm261 < Formula
     sha256 "f364169da5dee273b9a05fbb77cbd0a9fa508508edcbea224311a69754648e95" => :yosemite
   end
 
-  depends_on :hg => :build
+  depends_on "mercurial" => :build
   depends_on "go" => :build
   depends_on "glide" => :build
 
@@ -21,7 +21,7 @@ class KubernetesHelm261 < Formula
     ENV["GOPATH"] = buildpath
     ENV["GLIDE_HOME"] = HOMEBREW_CACHE/"glide_home/#{name}"
     ENV.prepend_create_path "PATH", buildpath/"bin"
-    arch = MacOS.prefer_64_bit? ? "amd64" : "x86"
+    arch = Hardware::CPU.is_64_bit? ? "amd64" : "x86"
     ENV["TARGETS"] = "darwin/#{arch}"
     dir = buildpath/"src/k8s.io/helm"
     dir.install buildpath.children - [buildpath/".brew_home"]
