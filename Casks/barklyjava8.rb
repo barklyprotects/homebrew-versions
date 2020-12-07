@@ -1,5 +1,5 @@
 cask 'barklyjava8' do
-  version '1.8.0_271-b09,a58eab1ec242421181065cdc37240b08'
+  version '1.8.0_271-b09,61ae65e088624f5aaa0b1d2d801acb16'
   sha256 'b0de04d3ec7fbf2e54e33e29c78ababa0a4df398ba490d4abb125b31ea8d663e'
 
   java_update = version.sub(%r{.*_(\d+)-.*}, '\1')
