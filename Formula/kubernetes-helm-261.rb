@@ -1,4 +1,7 @@
 class KubernetesHelm261 < Formula
+  # Should move to helm 2.17 (https://github.com/Homebrew/homebrew-core/blob/master/Formula/helm@2.rb) for 2.x
+  # Or https://github.com/Homebrew/homebrew-core/blob/master/Formula/helm.rb for 3.x
+  # helm 2.x is getting deprecated soon so shold move to heml 3.x
   desc "The Kubernetes package manager"
   homepage "https://helm.sh/"
   url "https://github.com/kubernetes/helm.git",
@@ -7,10 +10,9 @@ class KubernetesHelm261 < Formula
   head "https://github.com/kubernetes/helm.git"
 
   bottle do
-    cellar :any_skip_relocation
-    sha256 "aac19ad1d1d3ff9c015b7f7556a8e8cd12bf0807ac8e2e8c915513a89c3b2477" => :sierra
-    sha256 "49b6eca7c0dc1d77f496c8e616da32f53fb13eafbdfd49a499bb259543cd6f15" => :el_capitan
-    sha256 "f364169da5dee273b9a05fbb77cbd0a9fa508508edcbea224311a69754648e95" => :yosemite
+    sha256 cellar: :any_skip_relocation, sierra:     "aac19ad1d1d3ff9c015b7f7556a8e8cd12bf0807ac8e2e8c915513a89c3b2477"
+    sha256 cellar: :any_skip_relocation, el_capitan: "49b6eca7c0dc1d77f496c8e616da32f53fb13eafbdfd49a499bb259543cd6f15"
+    sha256 cellar: :any_skip_relocation, yosemite:   "f364169da5dee273b9a05fbb77cbd0a9fa508508edcbea224311a69754648e95"
   end
 
   depends_on "mercurial" => :build
