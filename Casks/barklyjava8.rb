@@ -1,6 +1,6 @@
 cask 'barklyjava8' do
-  version '1.8.0_331-b09,165374ff4ea84ef0bbd821706e29b123'
-  sha256 'de88bde2d1453d7323638a05199408f7293ec50ad9dc015e3aebae3fab0a976e'
+  version '1.8.0_333-b02,2dee051a5d0647d5be72a7c0abff270e'
+  sha256 '29247dc6451eaab6010d356de1f43d88f46dbdeb9b527008b2c58a70e2ec3fe8'
 
   java_update = version.sub(%r{.*_(\d+)-.*}, '\1')
   url "http://download.oracle.com/otn-pub/java/jdk/#{version.minor}u#{version.before_comma.split('_').last}/#{version.after_comma}/jdk-#{version.minor}u#{java_update}-macosx-x64.dmg",
